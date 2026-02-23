@@ -3,61 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carpimex - Carpintería</title>
+  
+  <title>Carpimex | Materiales de Carpintería</title>
+  <meta name="description" content="Venta de materiales de carpintería: tableros, herrajes, barnices, herramientas y más.">
+  <meta name="author" content="Carpimex">
+
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="Imagenes/Carpimex.png">
 </head>
+
 <body>
 
-  <header>
-    <h1>Carpimex</h1>
-    <p>Tu carpintería de confianza</p>
-  </header>
+<header class="header">
+  <div class="container header-content">
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+    <a href="#inicio" class="brand">
+      <img src="Imagenes/Carpimex.png" alt="Logo Carpimex" class="logo">
+      <div class="brand-text">
+        <h1>Carpimex</h1>
+        <p>Materiales y suministros para carpintería</p>
+      </div>
+    </a>
 
-  <section class="hero" id="inicio">
-    <h2>Bienvenido a Carpimex</h2>
-    <p>Diseños únicos en madera, calidad garantizada.</p>
-  </section>
+    <a href="#catalogo" class="btn-primary">Ver catálogo</a>
 
-  <section class="section" id="servicios">
-    <h2>Servicios</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Muebles a medida</h3>
-        <p>Descripción breve del servicio.</p>
-      </div>
-      <div class="service">
-        <h3>Restauración</h3>
-        <p>Descripción breve del servicio.</p>
-      </div>
-      <div class="service">
-        <h3>Instalaciones</h3>
-        <p>Descripción breve del servicio.</p>
-      </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="container nav-content">
+    <ul class="nav-list">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#categorias">Categorías</a></li>
+      <li><a href="#catalogo">Productos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="container">
+    <h2>Todo lo que necesitas para tus proyectos</h2>
+    <p>Amplio catálogo en tableros, herrajes, adhesivos, herramientas y acabados.</p>
+    <a href="#categorias" class="btn-secondary">Explorar categorías</a>
+  </div>
+</section>
+
+<section class="section" id="categorias">
+  <div class="container">
+    <header class="section-header">
+      <h2>Categorías</h2>
+      <p>Explora nuestros materiales disponibles</p>
+    </header>
+
+    <div class="category-grid">
+
+      <article class="category-card">
+        <h3>Tableros y Madera</h3>
+        <p>MDF, triplay, melamina y madera sólida.</p>
+      </article>
+
+      <article class="category-card">
+        <h3>Herrajes</h3>
+        <p>Bisagras, correderas, tornillos y jaladeras.</p>
+      </article>
+
+      <article class="category-card">
+        <h3>Adhesivos</h3>
+        <p>Cola blanca, siliconas y pegamentos industriales.</p>
+      </article>
+
+      <article class="category-card">
+        <h3>Acabados</h3>
+        <p>Barnices, lacas, tintes y selladores.</p>
+      </article>
+
+      <article class="category-card">
+        <h3>Herramientas</h3>
+        <p>Herramientas manuales y eléctricas.</p>
+      </article>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="section" id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>Aquí puedes escribir la historia de Carpimex, su misión y valores.</p>
-  </section>
+<section class="section alt-bg" id="catalogo">
+  <div class="container">
+    <header class="section-header">
+      <h2>Productos Destacados</h2>
+      <p>Precios competitivos y disponibilidad inmediata</p>
+    </header>
 
-  <section class="section" id="contacto">
-    <h2>Contacto</h2>
-    <p>Teléfono: (xxx) xxx-xxxx</p>
-    <p>Email: contacto@carpimex.com</p>
-    <p>Dirección: Calle, Ciudad, Estado</p>
-  </section>
+    <div class="product-grid">
 
-  <footer>
-    <p>&copy; 2026 Carpimex - Todos los derechos reservados</p>
-  </footer>
+      <article class="product-card">
+        <img src="Imagenes/MDF.png" alt="Tablero MDF 15mm">
+        <div class="product-info">
+          <h3>Tablero MDF 15mm</h3>
+          <p class="price">$450 MXN</p>
+          <button class="btn-primary">Solicitar</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="Imagenes/Herraje.png" alt="Bisagra cierre suave">
+        <div class="product-info">
+          <h3>Bisagra Cierre Suave</h3>
+          <p class="price">$35 MXN</p>
+          <button class="btn-primary">Solicitar</button>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="Imagenes/Barniz 1L.png" alt="Barniz Transparente 1L">
+        <div class="product-info">
+          <h3>Barniz Transparente 1L</h3>
+          <p class="price">$180 MXN</p>
+          <button class="btn-primary">Solicitar</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="nosotros">
+  <div class="container">
+    <header class="section-header">
+      <h2>Sobre Carpimex</h2>
+    </header>
+    <p>
+      Distribuimos materiales de carpintería para profesionales y aficionados.
+      Garantizamos calidad, precios competitivos y atención personalizada.
+    </p>
+  </div>
+</section>
+
+<section class="section alt-bg" id="contacto">
+  <div class="container">
+    <header class="section-header">
+      <h2>Contacto y Pedidos</h2>
+    </header>
+
+    <div class="contact-grid">
+
+      <address class="contact-info">
+        <p><strong>Teléfono:</strong> (xxx) xxx-xxxx</p>
+        <p><strong>Email:</strong> ventas@carpimex.com</p>
+        <p><strong>Ubicación:</strong> Ciudad, Estado</p>
+      </address>
+
+      <form class="contact-form">
+        <label>
+          Nombre
+          <input type="text" required>
+        </label>
+
+        <label>
+          Correo
+          <input type="email" required>
+        </label>
+
+        <label>
+          Producto y cantidad
+          <textarea rows="4" required></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">Enviar pedido</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <p>&copy; 2026 Carpimex - Materiales de Carpintería</p>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</footer>
 
 </body>
 </html>
